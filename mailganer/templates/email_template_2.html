@@ -1,5 +1,20 @@
-<H1> HI {{ name }}</H1> {{ surname }}
-<span>qooqoo  {{ birthday }}</span>
-<img src="{{ domain }}/sender/open-tracking/{{ id }}/">
-<img src="http://127.0.0.1:8000/sender/open-tracking/2/">
-<H2>{{ domain }}/sender/open-tracking/{{ id }}/</H2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Добрый день</title>
+    <style>
+        .center {
+          text-align: center;
+          color: blue;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <H1 class='center'> Здравствуйте, {{ surname }} {{ name }}.</H1>
+    <span>Ваша дата рождения: {{ birthday|date:"d M Y" }}</span>
+    <p>
+    В честь этого Вам доступна скидка в нашем магазине
+    <img src="{{ domain }}/sender/open-tracking/{{ id }}/{{ template_name }}/">
+  </body>
+</html>

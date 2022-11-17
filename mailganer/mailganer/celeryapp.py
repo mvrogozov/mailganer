@@ -1,9 +1,9 @@
 from __future__ import absolute_import
+
 import os
-from django.apps import apps
 
 from celery import Celery
-
+from django.apps import apps
 
 os.environ.setdefault(
     'DJANGO_SETTINGS_MODULE',
