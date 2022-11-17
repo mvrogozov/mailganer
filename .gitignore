@@ -8,6 +8,8 @@ images/
 # C extensions
 *.so
 
+email_sender.py
+
 # Distribution / packaging
 .Python
 build/
