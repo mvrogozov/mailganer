@@ -43,7 +43,10 @@ python manage.py migrate
 ```
 Запустить сервер redis.
 
-Запустить celery.
+Запустить celery:
+```
+python -m celery -A mailganer worker -l info
+```
 
 Запустить проект:
 
