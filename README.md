@@ -30,11 +30,11 @@ pip install -r requirements.txt
 ```
 В папке mailganer создать файл .env,
 записать в него переменные окружения:
-EMAIL_HOST='email server'    например 'smtp.yandex.ru'
-EMAIL_PORT='email server port'    например  587
-EMAIL_PASSWORD='password for your email'
-EMAIL_USER='your email'
-DJANGO_SECRET_KEY='secret key for django'
+* EMAIL_HOST='email server'    например 'smtp.yandex.ru'
+* EMAIL_PORT='email server port'    например  587
+* EMAIL_PASSWORD='password for your email'
+* EMAIL_USER='your email'
+* DJANGO_SECRET_KEY='secret key for django'
 
 Выполнить миграции:
 
