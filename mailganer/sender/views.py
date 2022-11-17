@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .models import Buyers, CheckedEmail
-from .utils import send_email
+from .tasks import send_email
 
 LOG_FILE_NAME = 'email_sender.log'
 SUBJECT = 'Тема письма'
